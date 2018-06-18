@@ -1,5 +1,6 @@
 package com.example.android.miwok;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -7,7 +8,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class SimpleFragmentPagerAdapter extends FragmentPagerAdapter {
 
     private String tabTitles[] = new String[] { "Numbers", "Family", "Colors", "Phrases" };
-    public SimpleFragmentPagerAdapter(FragmentManager fm) {
+
+    public SimpleFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
     }
 
